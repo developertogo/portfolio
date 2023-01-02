@@ -1105,12 +1105,15 @@ function App() {
           </div> {/* end right side */}
         </div>
       </main>
-      <h1 className="mt-4"><span>Built with  </span>
+      <h1 className="mt-4 mb-4"><span>Built with  </span>
         <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Tailwind CSS</a> 
         <span> + </span> 
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">React</a> 
         <span> + </span>
         <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">React Hook</a> 
+      </h1>
+      <h1>
+        <a href="https://github.com/developertogo/portfolio" target="_blank" rel="noopener noreferrer" className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600">Source</a>
       </h1>
     </div>
   )
