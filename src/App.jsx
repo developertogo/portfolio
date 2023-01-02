@@ -9,10 +9,25 @@ function App() {
     e.preventDefault();
     let target = e.target;
     document.querySelectorAll('.tab').forEach(t => {
-        t.classList.remove('tab-active')
-        target.classList.add('tab-active')
+      t.classList.remove('tab-active')
+      target.classList.add('tab-active')
     })
     setTab(target.id)
+  }
+
+  const onButtonClick = () => {
+    // using js method to get PDF file
+    fetch('Carlos-Hung-Resume-202209-v3.pdf').then(response => {
+      response.blob().then(blob => {
+        // creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'Carlos-Hung-Resume-202209-v3.pdf';
+        alink.click();
+      })
+    })
   }
 
   return (
@@ -43,12 +58,12 @@ function App() {
                   <div className="badge badge-outline text-xs">Polyglot</div>
                 </div>
                 <div className="flex group">
-                  <button className="download-btn">Download CV</button>
-                    <button className="download-btn-icon">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                      </svg>
-                    </button>
+                  <button className="download-btn" onClick={onButtonClick}>Download CV</button>
+                  <button className="download-btn-icon" onClick={onButtonClick}>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                  </button>
                   </div>
               </div>
             </div> {/* end user card */}
