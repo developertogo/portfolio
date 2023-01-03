@@ -40,7 +40,7 @@ function App() {
               <div className="card-body mb-0">
                 <h1 className="font-black text-center text-2xl">Carlos Hung</h1>
                 <div className="justify-start text-sm text-gray-400 mb-4">Software Developer</div>
-                <p className="text-left">Enthusiastically just simply make things happen.</p>
+                <p className="text-left">Enthusiastically making things happen</p>
                 <a href="mailto:developertogo@gmail.com" className="mail-link social-link-hover text-sm"><span>developertogo@gmail.com</span></a>
                 <span className="text-left text-sm mb-4 italic">415.967.0599</span>
                 <div className="flex flex-col space-y-4">
@@ -86,6 +86,10 @@ function App() {
                   <div className="flex justify-between">
                     <div className="text-gray-400">Environment</div>
                     <div className="font-medium text-right text-gray-600">100% Remote</div>
+                  </div>
+                  <div className="flex justify-between">
+                    <div className="text-gray-400">Take-Home Test</div>
+                    <div className="font-medium text-right text-gray-600">Love it!</div>
                   </div>
                   <div className="flex justify-between">
                     <div className="text-gray-400">Authorization</div>
