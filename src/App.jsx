@@ -73,6 +73,10 @@ function App() {
                     <div className="font-medium text-right text-gray-600">100% Remote</div>
                   </div>
                   <div className="flex justify-between">
+                    <div className="text-gray-400">Take-Home Test</div>
+                    <div className="font-medium text-right text-gray-600">Love it!</div>
+                  </div>
+                  <div className="flex justify-between">
                     <div className="text-gray-400">Authorization</div>
                     <div className="font-medium text-right text-gray-600">US Citizen</div>
                   </div>
