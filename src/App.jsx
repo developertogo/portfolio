@@ -710,7 +710,7 @@ function App() {
                     </div>
                   </div>
                   <div className="card bg-base-100 shadow-xl p-4 pt-0 mb-2">
-                    <div className="card-body p-2">
+                    <div className="card-body p-2 mt-4">
                       <div className="item-section mb-4">
                         <img className="company-logo rounded-full mx-auto" src="assets/img/turnhere.jpg" alt="" width="48" height="48"/>
                         <div className="w-full space-y-5">
@@ -813,7 +813,10 @@ function App() {
                           <div className="item-header">
                             <div className="space-y-3">
                               <div className="font-bold text-left text-lg">
-                                Postman API Hack Moonshot Prize Winner - Feb 16, 2021
+                                Postman API Hack Moonshot Prize Winner
+                                <span className="space-y-2 sm:text-right ml-28">
+                                  <div className="job-item-badge">Award</div>
+                                </span>
                               </div>
                               <div className="font-medium text-left">
                                 <span>Our ScanX (</span>
