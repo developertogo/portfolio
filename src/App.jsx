@@ -17,14 +17,14 @@ function App() {
 
   const onButtonClick = () => {
     // using js method to get PDF file
-    fetch('Carlos-Hung-Resume-202209-v3.pdf').then(response => {
+    fetch('Carlos-Hung-Resume-CA-v9-4-20261111.pdf').then(response => {
       response.blob().then(blob => {
         // creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // setting various property values
         let alink = document.createElement('a');
         alink.href = fileURL;
-        alink.download = 'Carlos-Hung-Resume-202209-v3.pdf';
+        alink.download = 'Carlos-Hung-Resume-CA-v9-4-20261111.pdf';
         alink.click();
       })
     })
@@ -73,7 +73,7 @@ function App() {
                 <div className="space-y-4">
                   <div className="flex justify-between">
                     <div className="text-gray-400">Location</div>
-                    <div className="font-medium text-right text-gray-600">SF Bay Area</div>
+                    <div className="font-medium text-right text-gray-600">CA, USA</div>
                   </div>
                   <div className="flex justify-between">
                     <div className="text-gray-400">Experience</div>
